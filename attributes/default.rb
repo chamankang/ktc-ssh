@@ -7,6 +7,7 @@ set['openssh']['server']['permit_root_login'] = "no"
 set['openssh']['server']['max_auth_tries'] = "3"
 set['openssh']['server']['password_authentication'] = "no"
 set['openssh']['server']['x11_forwarding'] = "yes"
+set['openssh']['server']['subsystem'] = "sftp /usr/lib/openssh/sftp-server"
 
 
 # client
