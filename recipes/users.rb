@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ktc-ssh 
+# Cookbook Name:: ktc-ssh
 # Recipe:: users
 #
 # Chaman Kang <chaman.kang@ktcloudware.com>
@@ -15,6 +15,14 @@ if ssh_users != nil and !ssh_users.empty?
     u = get_user(u)
     home_dir = get_home(u)
     if home_dir
+      # makes sure home dir exists (because we dunno)
+      directory home_dir do
+        owner u['id']
+        group u['groups'].first
+        mode "0750"
+        not_if { File.directory? home_dir }
+      end
+
       directory "#{home_dir}/.ssh" do
         owner u['id']
         group u['groups'].first
