@@ -18,6 +18,9 @@ suites:
     - recipe[ktc-testing]
     - recipe[ktc-ssh::users]
   attributes:
+    openssh:
+      server:
+        permit_root_login: yes
 
 clusters:
   default:
