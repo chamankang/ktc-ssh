@@ -9,8 +9,6 @@ set['openssh']['server']['password_authentication'] = "no"
 set['openssh']['server']['x11_forwarding'] = "yes"
 set['openssh']['server']['subsystem'] = "sftp /usr/lib/openssh/sftp-server"
 
-
 # client
 set['openssh']['client']['forward_x11'] = "yes"
 set['openssh']['client']['forward_agent'] = "yes"
-
