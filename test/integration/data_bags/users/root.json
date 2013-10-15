@@ -1,0 +1,11 @@
+{
+  "id": "root",
+  "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfOllhpH2AlsWqPXVQd6bsDEkgUXGrppZSY8or3rggzDNhdoPKxqmtXJDURO6PF2aEU51tauv5sfAEZ2q6g7/slJSg2bQb6Wa+P6p1SVpUnVQQGaCVrnEGBNXw5g0BGz0miCKWNYl71X/udVphZlgoveu9gV2lx0eNcmYFpMdDBMw1PFUF3gbSWu0suG+dpPng5GqwAhlvBBUSbOsXqs6MyZ66WYqKRI6A2us9baItBZroZIsZa35ho7+pjrY8C5fgFNJI0zxi0VtHUBeD4CCRukgHvGqLLg/BcH9eL1Q+286L7wCGX6f17pILHMtnE6M8qEXjYv1guGwUfS8BeY15 jenkins@jenkins01",
+  "groups": [ "wheel", "root" ],
+  "uid": 0,
+  "gid": "root",
+  "shell": "\/bin\/bash",
+  "home": "/root",
+  "comment": "ROOT NOM NOM",
+  "setup": [ "ssh", "bash", "top", "screen", "vim" ]
+}
