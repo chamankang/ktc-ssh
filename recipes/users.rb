@@ -7,13 +7,14 @@
 include_recipe "openssh"
 include_recipe "users"
 
+KTC::User.node = node
 
-users = all_users
-ssh_users = get_setup_users(users, "ssh")
+users = KTC::User.all_users
+ssh_users = KTC::User.get_setup_users(users, "ssh")
 if ssh_users != nil and !ssh_users.empty?
   ssh_users.each do |u|
-    u = get_user(u)
-    home_dir = get_home(u)
+    u = KTC::User.get_user(u)
+    home_dir = KTC::User.get_home(u)
     if home_dir
       # makes sure home dir exists (because we dunno)
       directory home_dir do
