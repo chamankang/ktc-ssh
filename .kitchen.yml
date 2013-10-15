@@ -20,7 +20,7 @@ suites:
   attributes:
     openssh:
       server:
-        permit_root_login: yes
+        permit_root_login: 'yes'
 
 clusters:
   default:
