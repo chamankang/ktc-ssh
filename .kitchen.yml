@@ -18,7 +18,3 @@ suites:
     - recipe[ktc-testing]
     - recipe[ktc-ssh::users]
   attributes:
-
-clusters:
-  default:
-    - default
