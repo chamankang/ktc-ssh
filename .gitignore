@@ -10,4 +10,5 @@
 # Bundler
 bin/*
 .bundle/*
-
+Berkfile.lock
+Gemfile.lock

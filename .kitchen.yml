@@ -21,7 +21,3 @@ suites:
     openssh:
       server:
         permit_root_login: 'yes'
-
-clusters:
-  default:
-    - default
