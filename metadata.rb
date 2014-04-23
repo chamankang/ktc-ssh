@@ -8,3 +8,4 @@ version '2.0.5'
 
 depends 'openssh'
 depends 'users'
+depends 'ktc-utils'
